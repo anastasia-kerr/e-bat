@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import questionsData from './questions.json'
 import cluesData from './questions_3clues.json'
+import mzqData from './questions_mzq.json'
 import { SUBMIT_URL } from './config'
 
 export default function App() {
@@ -12,6 +13,12 @@ export default function App() {
 
   const questions = useMemo(() => {
     if (dataset === 'clues') return (cluesData && cluesData.results) || []
+    if (dataset === 'mzq') {
+      // mzqData has `items` with fields: question, answer -> convert to results shape
+      return (mzqData && mzqData.items
+        ? mzqData.items.map((it) => ({ question: it.question, correct_answer: it.answer || '' }))
+        : [])
+    }
     return (questionsData && questionsData.results) || []
   }, [dataset])
 
@@ -138,6 +145,7 @@ export default function App() {
         <select value={dataset} onChange={(e) => { setDataset(e.target.value); setIndex(0); setResult(null); setStatus(null); }}>
           <option value="default">Default</option>
           <option value="clues">3-clues set</option>
+          <option value="mzq">MozgoQuiz (video)</option>
         </select>
         {dataset === 'clues' && cluesData && cluesData.source && (
           <div style={{ fontSize: 12, opacity: 0.8, marginTop: 6 }}>{cluesData.source} — {cluesData.note}</div>
