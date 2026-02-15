@@ -3,7 +3,6 @@ import { SUBMIT_URL } from './config'
 
 export default function App() {
   const [answer, setAnswer] = useState('')
-  const [name, setName] = useState('')
   const [status, setStatus] = useState(null)
 
   async function handleSubmit(e) {
@@ -12,15 +11,12 @@ export default function App() {
 
     const payload = {
       answer,
-      name,
       timestamp: new Date().toISOString(),
     }
 
     if (!SUBMIT_URL) {
       // No remote configured — simulate success and show instructions
-      setTimeout(() => {
-        setStatus('simulated')
-      }, 300)
+      setTimeout(() => setStatus('simulated'), 300)
       return
     }
 
@@ -51,11 +47,6 @@ export default function App() {
           <label>
             <input type="radio" name="answer" value="No" checked={answer === 'No'} onChange={() => setAnswer('No')} /> No
           </label>
-        </div>
-
-        <div style={{ marginBottom: 12 }}>
-          <label style={{ display: 'block', marginBottom: 6 }}>Your name (optional)</label>
-          <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" />
         </div>
 
         <div className="buttons">
