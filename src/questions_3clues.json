@@ -1,0 +1,111 @@
+{
+  "source": "OpenTDB amount=50",
+  "note": "15 вопросов (~30%) выбраны как наиболее подходящие для формата «3 несвязные подсказки → один ответ».",
+  "results": [
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения",
+      "question": "1) Шериф с верёвкой\n2) «У меня новая игрушка!»\n3) У него была комната\nКто это?",
+      "correct_answer": "Энди"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "География",
+      "question": "1) Страна без выхода к морю в ЮВА\n2) Три буквы на ценнике\n3) Это не рубль и не доллар\nЧто это?",
+      "correct_answer": "Кип"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Кино",
+      "question": "1) Число, которое «включает» невозможное\n2) Дорога появляется позади\n3) Не км/ч, а mph\nЧто это за скорость?",
+      "correct_answer": "88 mph"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Видеоигры",
+      "question": "1) Поймали покемона, но это не покемон\n2) Консоль с названием из сна\n3) Sega\nЧто это?",
+      "correct_answer": "Dreamcast"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Музыка",
+      "question": "1) Самолётики из бумаги\n2) Три точки в псевдониме\n3) Mathangi Arulpragasam\nКто это?",
+      "correct_answer": "M.I.A."
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Мифология",
+      "question": "1) Лабиринт\n2) Ариадна и нить\n3) Человек + …\nКто это?",
+      "correct_answer": "Минотавр"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Настолки",
+      "question": "1) D&D 5e\n2) «Самый страшный» из бестиария\n3) Имя звучит как катастрофа\nКто это?",
+      "correct_answer": "Тараск"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Аниме и манга",
+      "question": "1) Два брата\n2) Один — в доспехах\n3) Фамилия на английском из 5 букв\nКакая фамилия?",
+      "correct_answer": "Elric"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "История",
+      "question": "1) 268,8\n2) Айсберг\n3) Это не высота и не скорость\nЧто это за величина?",
+      "correct_answer": "Длина «Титаника» (268,8 м)"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Наука",
+      "question": "1) 92\n2) Таблица Менделеева\n3) Название планеты тут ни при чём\nЧто это за элемент?",
+      "correct_answer": "Уран"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Видеоигры",
+      "question": "1) Пустошь\n2) Ядерная эстетика\n3) Год до 1998\nКогда вышла первая игра?",
+      "correct_answer": "1997"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Настолки",
+      "question": "1) Деньги из коробки\n2) Улицы и аренда\n3) Изначально игра была «про хозяев»\nКак назывался прототип?",
+      "correct_answer": "The Landlord's Game"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Гаджеты",
+      "question": "1) Дополненная реальность\n2) Очки, но не для зрения\n3) Компания из Редмонда\nКто разработал устройство?",
+      "correct_answer": "Microsoft"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Наука",
+      "question": "1) 299 792 458\n2) Вакуум\n3) Постоянная, которую знают все физики\nЧто это?",
+      "correct_answer": "Скорость света"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Техника",
+      "question": "1) Три буквы на корпусе монитора\n2) Кристаллы, но не украшения\n3) Display в конце\nЧто это за аббревиатура?",
+      "correct_answer": "LCD (Liquid Crystal Display)"
+    }
+  ]
+}

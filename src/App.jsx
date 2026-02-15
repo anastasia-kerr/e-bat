@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react'
 import questionsData from './questions.json'
+import cluesData from './questions_3clues.json'
 import { SUBMIT_URL } from './config'
 
 export default function App() {
@@ -7,8 +8,12 @@ export default function App() {
   const [status, setStatus] = useState(null)
   const [result, setResult] = useState(null)
   const [index, setIndex] = useState(0)
+  const [dataset, setDataset] = useState('default')
 
-  const questions = useMemo(() => (questionsData && questionsData.results) || [], [])
+  const questions = useMemo(() => {
+    if (dataset === 'clues') return (cluesData && cluesData.results) || []
+    return (questionsData && questionsData.results) || []
+  }, [dataset])
 
   async function handleSubmit(e) {
     e.preventDefault()
@@ -114,6 +119,17 @@ export default function App() {
   return (
     <div className="container">
       <h1 className="title">Quiz</h1>
+
+      <div style={{ marginBottom: 12 }}>
+        <label style={{ fontSize: 13, marginRight: 8 }}>Question set:</label>
+        <select value={dataset} onChange={(e) => { setDataset(e.target.value); setIndex(0); setResult(null); setStatus(null); }}>
+          <option value="default">Default</option>
+          <option value="clues">3-clues set</option>
+        </select>
+        {dataset === 'clues' && cluesData && cluesData.source && (
+          <div style={{ fontSize: 12, opacity: 0.8, marginTop: 6 }}>{cluesData.source} — {cluesData.note}</div>
+        )}
+      </div>
 
       {current ? (
         <form onSubmit={handleSubmit}>
