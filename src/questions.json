@@ -1,0 +1,355 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Развлечения: Музыка",
+      "question": "Эта награда обычно достаётся академическим композиторам, но однажды её впервые получил <y>джазовый музыкант</y>. Назовите его.",
+      "correct_answer": "Wynton Marsalis"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Музыка",
+      "question": "Green Day, альбом <y>«21st Century Breakdown»</y>. Какая песня из списка ниже к нему <y>не относится</y>: Know Your Enemy / ¿Viva la Gloria? (Little Girl) / Before The Lobotomy / She's A Rebel?",
+      "correct_answer": "She's A Rebel"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "История",
+      "question": "Фразу <y>«Пусть едят пирожные»</y> обычно приписывают одной знаменитой женщине, хотя почти наверняка она этого не говорила. Кому её приписывают?",
+      "correct_answer": "Marie Antoinette"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Аниме и манга",
+      "question": "Фанатам «Toriko». Какая еда заведомо <y>совместима с Торико</y>: Poison Potato / Mors Oil / Alpacookie / Parmesansho Fruit?",
+      "correct_answer": "Poison Potato"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Наука: Компьютеры",
+      "question": "Разогрев для айтишников: один <y>байт</y> — это 8 бит. Сколько разных значений может хранить один байт?",
+      "correct_answer": "256"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения: Телевидение",
+      "question": "Сериал «Doctor Who» идёт десятилетиями, но кто-то был первым. Назовите <y>первого актёра</y>, сыгравшего Доктора.",
+      "correct_answer": "William Hartnell"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "История",
+      "question": "Два бывших президента США умерли в один день с разницей в несколько часов. Назовите <y>обоих</y>.",
+      "correct_answer": "John Adams and Thomas Jefferson"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "История",
+      "question": "24 августа 1812 года. Какое здание в Вашингтоне было <y>подожжено</y> (самое известное в этой истории)?",
+      "correct_answer": "The White House"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Развлечения: Книги",
+      "question": "Для тех, кто в лоре Magic: The Gathering: сеты <y>Antiquities</y>, <y>Ice Age</y> и <y>Alliances</y> происходят на каком континенте?",
+      "correct_answer": "Terisiare"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Общие знания",
+      "question": "Пивной вопрос: какой стиль пива обычно отличает <y>повышенное содержание хмеля</y>?",
+      "correct_answer": "India Pale Ale"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Наука и природа",
+      "question": "Земля и Луна очень разные по размеру. А как насчёт массы: во сколько примерно раз масса Земли <y>больше</y> массы Луны? (Округлённо.)",
+      "correct_answer": "About 81 times"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения: Видеоигры",
+      "question": "Покемоны: в каком поколении впервые появился <y>«метод Масуды»</y>?",
+      "correct_answer": "Diamond/Pearl"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "The Binding of Isaac: как зовут финального босса в локации <y>The Void</y>?",
+      "correct_answer": "Delirium"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения: Видеоигры",
+      "question": "Undertale: кто говорит фразу <y>«you’re gonna have a bad time»</y>?",
+      "correct_answer": "Sans"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Спорт",
+      "question": "Футбол: кто является <y>лучшим бомбардиром</y> сборной Англии (по голам)?",
+      "correct_answer": "Wayne Rooney"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения: Видеоигры",
+      "question": "CS:GO: как называется редкость у скинов, которые официально <y>выведены из оборота</y>?",
+      "correct_answer": "Contraband"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "История",
+      "question": "Кого называли <y>«Лис пустыни»</y>?",
+      "correct_answer": "Erwin Rommel"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Комиксы",
+      "question": "DC Comics: в 1993 году появился импринт для более «взрослых» историй (Swamp Thing, Sandman и т.п.). Как он назывался?",
+      "correct_answer": "Vertigo"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Развлечения: Кино",
+      "question": "«The Good, the Bad and the Ugly»: назовите актёров, которые составляют главную <y>троицу</y> фильма.",
+      "correct_answer": "Clint Eastwood, Eli Wallach, and Lee Van Cleef"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения: Видеоигры",
+      "question": "Halo: аббревиатура <y>IWHBYD</y> на черепе (skull) расшифровывается как…?",
+      "correct_answer": "I Would Have Been Your Daddy"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Общие знания",
+      "question": "Оригинальный World Trade Center: сколько времени занимала <y>полная мойка</y> внешнего фасада моторизованными мойщиками окон?",
+      "correct_answer": "1 Month"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Развлечения: Кино",
+      "question": "YouTube Rewind: в каком году вышел <y>первый официальный</y> выпуск?",
+      "correct_answer": "2010"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Общие знания",
+      "question": "Как по-научному называется <y>южное сияние</y>?",
+      "correct_answer": "Aurora Australis"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Спорт",
+      "question": "NASCAR: кто выиграл <y>Daytona 500</y> в 1998 году?",
+      "correct_answer": "Dale Earnhardt"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "Развлечения: Видеоигры",
+      "question": "Kingdom Hearts: кто из перечисленных <y>не является</y> опциональным боссом: Sephiroth / Julius / Kurt Zisa / Master Yen Sid?",
+      "correct_answer": "Master Yen Sid"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Наука: Компьютеры",
+      "question": "HTML — это язык разметки. Как полностью расшифровывается аббревиатура <y>HTML</y>?",
+      "correct_answer": "Hypertext Markup Language"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Комиксы",
+      "question": "Marvel (Earth-616): кто создал <y>Ультрона</y>?",
+      "correct_answer": "Henry Pym"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "Just Cause 2: действие происходит в вымышленной островной стране ЮВА. Как она называется?",
+      "correct_answer": "Panau"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "География",
+      "question": "Аббревиатура <y>PIIGS</y>: какие пять стран обычно имеют в виду?",
+      "correct_answer": "Portugal, Ireland, Italy, Greece, Spain"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Комиксы",
+      "question": "Комиксы про Sonic: кто возглавил <y>Dark Legion</y> после убийства Лугера?",
+      "correct_answer": "Lien-Da"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Общие знания",
+      "question": "Дартс: какое число находится <y>ровно напротив 1</y> на стандартной мишени?",
+      "correct_answer": "19"
+    },
+    {
+      "type": "open",
+      "difficulty": "hard",
+      "category": "География",
+      "question": "В 2010 году: какая страна с мусульманским большинством была <y>самой населённой</y>?",
+      "correct_answer": "Indonesia"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "География",
+      "question": "На флаге какой части Великобритании изображён <y>дракон</y>?",
+      "correct_answer": "Wales"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Общие знания",
+      "question": "Французские слова часто путают. Как переводится слово <y>glace</y>?",
+      "correct_answer": "Ice"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "Divinity: Original Sin 2: как зовут полудемона, через которого вы переходите между <y>актами</y>?",
+      "correct_answer": "Malady"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Мифология",
+      "question": "Гиппогриф: спереди <y>орёл</y>. А сзади кто?",
+      "correct_answer": "Horse"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Общие знания",
+      "question": "Огурцы почти полностью состоят из воды. Сколько процентов воды в огурце — <y>примерно</y>?",
+      "correct_answer": "About 95%"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Наука: Компьютеры",
+      "question": "Миф про программирование: «любой код надо компилировать в .exe». Назовите <y>один</y> популярный язык, который часто запускают без предварительной компиляции в .exe (интерпретируемый/скриптовый).",
+      "correct_answer": "JavaScript"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "История",
+      "question": "Кто был первым президентом США, родившимся уже после провозглашения независимости США?",
+      "correct_answer": "Martin Van Buren"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "География",
+      "question": "Назовите столицу <y>Индонезии</y>.",
+      "correct_answer": "Jakarta"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Наука и природа",
+      "question": "Самое большое животное на Земле — кто?",
+      "correct_answer": "Blue Whale"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Наука и природа",
+      "question": "Что называют <y>«энергостанцией клетки»</y>?",
+      "correct_answer": "Mitochondria"
+    },
+    {
+      "type": "open",
+      "difficulty": "easy",
+      "category": "Транспорт",
+      "question": "У <y>моноцикла</y> сколько колёс?",
+      "correct_answer": "1"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "Call of Duty: Zombies: на какой карте впервые появилась <y>Wunderwaffe DG-2</y>?",
+      "correct_answer": "Shi No Numa"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "Серия Wolfenstein: как зовут главного героя, за которого вы играете почти во всех играх серии?",
+      "correct_answer": "William \"B.J.\" Blazkowicz"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Общие знания",
+      "question": "Что такое <y>«дакимакура»</y>?",
+      "correct_answer": "A body pillow"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "Серия .hack: какая игра была <y>самой первой</y>?",
+      "correct_answer": ".hack//Infection"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Знаменитости",
+      "question": "Как звали <y>первого мужа</y> Мэрилин Монро?",
+      "correct_answer": "James Dougherty"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Телевидение",
+      "question": "Battlestar Galactica: как называются главные антагонисты — эта раса/фракция?",
+      "correct_answer": "The Cylons"
+    },
+    {
+      "type": "open",
+      "difficulty": "medium",
+      "category": "Развлечения: Видеоигры",
+      "question": "Metal Gear Solid 3: в какой стране/регионе происходит основная часть событий игры? (Не остров, а место действия.)",
+      "correct_answer": "Soviet Union"
+    }
+  ]
+}
