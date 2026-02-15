@@ -55,6 +55,7 @@ export default function App() {
   }
 
   const current = questions[index]
+  const total = questions.length
 
   function nextQuestion() {
     setAnswer('')
@@ -119,6 +120,18 @@ export default function App() {
   return (
     <div className="container">
       <h1 className="title">Quiz</h1>
+
+      {/* Progress indicator */}
+      {total > 0 && (
+        <div style={{ marginBottom: 12 }}>
+          <div style={{ fontSize: 13, marginBottom: 6 }}>
+            Question {Math.min(index + 1, total)} of {total}
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.06)', height: 8, borderRadius: 6, overflow: 'hidden' }}>
+            <div style={{ height: '100%', background: 'linear-gradient(90deg,#7c3aed,#06b6d4)', width: `${Math.round(((index + 1) / Math.max(1, total)) * 100)}%` }} />
+          </div>
+        </div>
+      )}
 
       <div style={{ marginBottom: 12 }}>
         <label style={{ fontSize: 13, marginRight: 8 }}>Question set:</label>
