@@ -1,0 +1,29 @@
+:root{
+  --bg: #0f172a;
+  --card: #0b1220;
+  --accent: #7c3aed;
+  --text: #e6eef8;
+}
+body{
+  margin:0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg,var(--bg),#071028);
+  color: var(--text);
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.container{
+  background: rgba(255,255,255,0.03);
+  padding:28px;
+  border-radius:12px;
+  width: 420px;
+  box-shadow: 0 6px 24px rgba(2,6,23,0.6);
+}
+.title{margin:0 0 8px 0}
+.question{margin:0 0 16px 0}
+.buttons{display:flex;gap:12px}
+button{background:var(--accent);border:0;padding:10px 16px;color:white;border-radius:8px;cursor:pointer}
+button:nth-child(2){background:#334155}
+.response{margin-top:16px;padding:10px;background:rgba(255,255,255,0.02);border-radius:8px}
