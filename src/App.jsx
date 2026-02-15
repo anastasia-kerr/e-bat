@@ -5,6 +5,7 @@ import { SUBMIT_URL } from './config'
 export default function App() {
   const [answer, setAnswer] = useState('')
   const [status, setStatus] = useState(null)
+  const [result, setResult] = useState(null)
   const [index, setIndex] = useState(0)
 
   const questions = useMemo(() => (questionsData && questionsData.results) || [], [])
@@ -18,6 +19,10 @@ export default function App() {
       answer,
       timestamp: new Date().toISOString(),
     }
+
+    // Evaluate correctness locally with fuzzy matching
+    const result = checkAnswer(answer, questions[index]?.correct_answer || '')
+    setResult({ ok: result.ok, score: result.score })
 
     if (!SUBMIT_URL) {
       // No remote configured — simulate success and show instructions
@@ -52,10 +57,58 @@ export default function App() {
     setIndex((i) => (i + 1) % Math.max(1, questions.length))
   }
 
+  // Normalize strings: lowercase, strip diacritics, remove punctuation, collapse spaces
+  function normalizeText(s) {
+    if (s === null || s === undefined) return ''
+    return s
+      .toString()
+      .normalize('NFD')
+      .replace(/\p{Diacritic}/gu, '')
+      .toLowerCase()
+      .replace(/<[^>]*>/g, '')
+      .replace(/[^\p{L}\p{N} ]+/gu, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+  }
+
+  // Levenshtein distance
+  function levenshtein(a, b) {
+    const an = a.length
+    const bn = b.length
+    if (an === 0) return bn
+    if (bn === 0) return an
+    const v0 = new Array(bn + 1).fill(0)
+    const v1 = new Array(bn + 1).fill(0)
+    for (let i = 0; i <= bn; i++) v0[i] = i
+    for (let i = 0; i < an; i++) {
+      v1[0] = i + 1
+      for (let j = 0; j < bn; j++) {
+        const cost = a[i] === b[j] ? 0 : 1
+        v1[j + 1] = Math.min(v1[j] + 1, v0[j + 1] + 1, v0[j] + cost)
+      }
+      for (let k = 0; k <= bn; k++) v0[k] = v1[k]
+    }
+    return v1[bn]
+  }
+
+  // Return similarity [0..1]
+  function similarity(a, b) {
+    const na = normalizeText(a)
+    const nb = normalizeText(b)
+    if (!na && !nb) return 1
+    if (!na || !nb) return 0
+    if (na === nb) return 1
+    // If one contains the other, consider high similarity
+    if (na.includes(nb) || nb.includes(na)) return 0.95
+    const dist = levenshtein(na, nb)
+    const maxLen = Math.max(na.length, nb.length)
+    return Math.max(0, 1 - dist / maxLen)
+  }
+
   function checkAnswer(user, correct) {
-    if (!user) return false
-    const normalize = (s) => s.toString().trim().toLowerCase()
-    return normalize(user) === normalize(correct)
+    const sim = similarity(user, correct)
+    // threshold: consider correct if similarity >= 0.75
+    return { ok: sim >= 0.75, score: sim }
   }
 
   return (
@@ -99,18 +152,12 @@ export default function App() {
         {status && status.startsWith('error') && <div className="response">Error submitting: {status}</div>}
 
         {/* show evaluation */}
-        {status === 'ok' && (
+        {/* Show result based on local fuzzy evaluation stored in `result` */}
+        {result && (
           <div style={{ marginTop: 10 }}>
-            <strong>Result:</strong> {checkAnswer(answer, current.correct_answer) ? 'Correct!' : `Incorrect — answer: ${current.correct_answer}`}
-            <div style={{ marginTop: 8 }}>
-              <button onClick={nextQuestion}>Next question</button>
-            </div>
-          </div>
-        )}
-
-        {status === 'simulated' && (
-          <div style={{ marginTop: 10 }}>
-            <strong>Result (simulated):</strong> {checkAnswer(answer, current.correct_answer) ? 'Looks correct' : `Expected: ${current.correct_answer}`}
+            <strong>Result:</strong>{' '}
+            {result.ok ? 'Correct!' : `Not an exact match — expected: ${current.correct_answer}`}
+            <div style={{ fontSize: 13, opacity: 0.9 }}>Similarity: {(result.score * 100).toFixed(0)}%</div>
             <div style={{ marginTop: 8 }}>
               <button onClick={nextQuestion}>Next question</button>
             </div>
